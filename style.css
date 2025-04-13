@@ -1,0 +1,323 @@
+* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ====== Subscription Section ====== */
+.subscription {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.bg-img {
+  font-family:fantasy;
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+opacity:0;
+transition: opacity 1.5s ease-in-out;
+}
+
+.bg-img.active {
+  opacity: 1;
+}
+
+/* Dark overlay */
+.subscription::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+/* Background Slideshow */
+.bg-slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.bg-slideshow .bg-img {
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+/* Wrap your image section in a container like this: */
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start; /* Aligns to the left */
+    gap: 10px; /* space between images */
+    margin: 20px;
+}
+
+/* Style all images inside the container */
+.image-grid img {
+    width: 180px;   /* adjust width to fit nicely */
+    height: 260px;  /* uniform height */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05); /* optional zoom on hover */
+}
+
+.bg-slideshow .bg-img.active {
+  opacity: 1;}
+
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}
+
+/* Subscription Content */
+.subscription-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px; padding: 20px;
+}
+
+.subscription-content h2 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subscription-content p {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.subscription-form {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.subscription-form input {
+  font-family:'Times New Roman', Times, serif;
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+.subscription-form button {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  padding: 10px 20px;
+  background: red;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* ====== Trending Section ====== */
+.trending {
+  padding: 40px 20px;
+}
+
+.trending h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.trending-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.trending-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+}
+
+.trending-list::-webkit-scrollbar {
+  display: none;
+}
+
+.book-item {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex: 0 0 auto;
+  width: 160px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.book-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.book-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Scroll Buttons */
+.scroll-btn { background: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  z-index: 5;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-btn.left {
+  left: 0;
+}
+
+.scroll-btn.right {
+  right: 0;
+}
+
+/* ====== Features Section ====== */
+.features {
+  font-family:monospace;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #111;
+  justify-content: center;
+}
+
+.feature-box {
+  flex: 1 1 250px;
+  background: #222;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.feature-box h3 {
+  margin-bottom: 10px;
+}
+
+/* ====== FAQ Section ====== */
+.faq {
+  background-color: #000;
+  padding: 40px 20px;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+}
+
+
+.faq-answer.active {
+  display: block;
+}
+.faq-question {
+  font-family:cursive;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+}
+
+.faq-question .plus-icon {
+  font-family:cursive;
+  position: absolute;
+  right: 20px;
+  font-size: 1.2rem;
+}
+
+.faq-answer {
+  font-family:cursive;
+  display: none;
+  padding: 15px;
+  background-color: #333;
+  color: #ccc;
+}
+
+/* Active question */
+.faq-question.active .plus-icon {
+  
+  content: '-';
+  transform: rotate(45deg);
+} /* ====== Footer ====== */
+.footer {
+  font-family:'Times New Roman', Times, serif;
+  background-color: #111;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+} 

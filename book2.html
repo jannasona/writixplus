@@ -1,0 +1,128 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Megala - Writix</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.9)), url('images/megala.png') no-repeat center center/cover;
+      background-attachment: fixed;
+      color: #f8f8f8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .book-container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 40px;
+      max-width: 900px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    .book-image {
+      width: 260px;
+      border-radius: 12px;
+box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+      margin-bottom: 25px;
+    }
+
+    .book-title {
+      font-size: 2.8rem;
+      font-weight: bold;
+      color: #ffa447;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .book-author {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 25px;
+    }
+
+    .book-description {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: #f2f2f2;
+      margin-bottom: 35px;
+      padding: 0 20px;
+    }
+
+    .cta-btn {
+      background-color: #ffa447;
+      color: #fff;
+      padding: 12px 28px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #e68a2f;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+
+    .footer a {
+      color: #ffa447;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 600px) {
+      .book-title {
+        font-size: 2rem;
+      }
+
+      .book-image {
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="book-container">
+<img src="images/megala.png" alt="Megala Book Cover" class="book-image"/>
+
+    <h1 class="book-title">Megala</h1>
+    <p class="book-author">By Aru Das</p>
+
+    <p class="book-description">
+      She wasn’t born to be saved. She was born to survive.<br><br>
+      <strong>"Megala"</strong> is the fierce and fearless story of a girl who rises from pain to power. With a heart scarred by betrayal and eyes that burn with fire, she reclaims every part of herself the world tried to erase.<br><br>
+      This is not a fairytale. It’s a saga of war, womanhood, and the will to become something more than what you’re told.
+    </p>
+
+    <a href="purchase.html" class="cta-btn">Rise with Megala</a>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Writix. All rights reserved | <a href="legal.html">Legal Info</a></p>
+  </div>
+
+</body>
+</html>
+
+

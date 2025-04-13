@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Account - Writix</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .account-header {
+      background-color: #111;
+      padding: 3rem 2rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    .account-header h1 {
+      font-size: 2.8rem;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .account-header p {
+      color: #ccc;
+      font-size: 1.1rem;
+    }
+
+    .account-container {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .account-section {
+      background-color: #1c1c1c;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 6px;
+      border-left: 4px solid red;
+    }
+
+    .account-section h3 {
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .account-section p {
+      color: #aaa;
+      font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .account-section a {
+      display: inline-block;
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .account-section a:hover {
+      text-decoration: underline;
+    }
+
+    .account-actions {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .account-actions button {
+      padding: 0.7rem 1.2rem;
+      background-color: red;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .account-actions button:hover {
+      background-color: #e50914;
+    }
+
+    footer {
+      background-color: #000;
+      color: #777;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="account-header">
+    <h1>My Account</h1>
+    <p>Manage your account information, subscription, and preferences.</p>
+  </div>
+
+  <div class="account-container">
+    <div class="account-section">
+      <h3>Account Info</h3>
+      <p>Email: user@example.com</p>
+      <p>Membership Plan: Premium (₹149/month)</p>
+      <div class="account-actions">
+        <button>Change Email</button>
+        <button>Update Password</button>
+      </div>
+    </div>
+
+    <div class="account-section">
+      <h3>Subscription Settings</h3>
+      <p>You can modify your plan or cancel at any time.</p>
+      <div class="account-actions">
+        <button>Change Plan</button>
+        <button>Cancel Membership</button>
+      </div>
+    </div>
+
+    <div class="account-section">
+      <h3>Profile Settings</h3>
+      <p>Customize your profile preferences and language settings.</p>
+      <div class="account-actions">
+        <button>Edit Profile</button>
+        <button>Language</button>
+      </div>
+    </div>
+
+    <div class="account-section">
+      <h3>Need Help?</h3>
+      <p>If you have any issues, visit our <a href="help.html">Help Centre</a>.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Writix. All rights reserved.
+  </footer>
+
+</body>
+</html>

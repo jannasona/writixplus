@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ways to Watch - Writix</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .ways-header {
+      background-color: #111;
+      text-align: center;
+      padding: 3rem 2rem;
+      border-bottom: 1px solid #333;
+    }
+
+    .ways-header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .ways-header p {
+      font-size: 1.1rem;
+      color: #ccc;
+    }
+
+    .ways-container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .way-card {
+      background-color: #1c1c1c;
+      border-left: 4px solid red;
+      padding: 1.5rem;
+      border-radius: 6px;
+      width: 280px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .way-card:hover {
+      transform: scale(1.05);
+    }
+
+    .way-card img {
+      width: 80px;
+      margin-bottom: 1rem;
+    }
+
+    .way-card h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+
+    .way-card p {
+      color: #bbb;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #000;
+      color: #777;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .ways-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="ways-header">
+    <h1>Ways to Read Writix</h1>
+    <p>Read your favorite stories, anywhere, anytime — on any device.</p>
+  </header>
+
+  <section class="ways-container">
+
+    <div class="way-card">
+      <img src="images/desktop.png" alt="Desktop" />
+      <h3>Desktop</h3>
+      <p>Access Writix from any modern browser on your computer or laptop. Seamless and fast.</p>
+    </div>
+
+    <div class="way-card">
+      <img src="images/mobile.png" alt="Mobile" />
+      <h3>Mobile</h3>
+      <p>Read on the go using your smartphone. Compatible with Android and iOS browsers.</p>
+    </div>
+
+    <div class="way-card">
+      <img src="images/tablet.png" alt="Tablet" />
+      <h3>Tablet</h3>
+      <p>Perfect for bedtime stories or long reads with a comfortable viewing experience.</p>
+    </div>
+
+    <div class="way-card">
+      <img src="images/ebook.png" alt="eBook Reader" />
+      <h3>eReaders</h3>
+      <p>Download and read offline on Kindle or any compatible eBook device. (Coming soon!)</p>
+    </div>
+
+  </section>
+
+  <footer>
+    &copy; 2025 Writix. All rights reserved. | Enjoy stories your way ❤
+  </footer>
+
+</body>
+</html>

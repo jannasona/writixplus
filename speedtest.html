@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Speed Test - Writix</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    .speedtest-container {
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+      padding: 2rem;
+      background-color: #222;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .speedtest-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .speedtest-container p {
+      font-size: 1.2rem;
+      color: #bbb;
+    }
+
+    .test-button {
+      padding: 1rem 2rem;
+      font-size: 1.3rem;
+      background-color: #ff4444;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 2rem;
+      transition: 0.3s;
+    }
+
+    .test-button:hover {
+      background-color: #ff1a1a;
+    }
+
+    .speed-result {
+      display: none;
+      margin-top: 2rem;
+      font-size: 1.5rem;
+    }
+
+    .speed-result p {
+      margin: 0.5rem 0;
+    }
+
+    .result-speed {
+      font-size: 2.2rem;
+      color: #ffdd00;
+      font-weight: bold;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="speedtest-container">
+    <h1>Writix Speed Test</h1>
+    <p>Test your internet speed and ensure you're ready for a seamless reading experience with Writix.</p>
+    
+    <button class="test-button" onclick="startSpeedTest()">Start Speed Test</button>
+
+    <div class="speed-result" id="speedResult">
+      <p><strong>Download Speed:</strong> <span id="downloadSpeed">-</span> Mbps</p>
+      <p><strong>Upload Speed:</strong> <span id="uploadSpeed">-</span> Mbps</p>
+      <p><strong>Ping:</strong> <span id="ping">-</span> ms</p>
+    </div>
+    
+    <div class="footer">
+      &copy; 2025 Writix. All rights reserved.
+    </div>
+  </div>
+
+  <script>
+    // Simulated speed test function (can be replaced with actual speed test API)
+    function startSpeedTest() {
+      document.querySelector('.test-button').disabled = true;
+      document.querySelector('.test-button').textContent = "Testing... Please wait...";
+      
+      setTimeout(() => {
+        // Simulated data for speed test result
+        const downloadSpeed = (Math.random() * 100).toFixed(2);  // Random number between 0 and 100
+        const uploadSpeed = (Math.random() * 50).toFixed(2);     // Random number between 0 and 50
+        const ping = (Math.random() * 50).toFixed(2);            // Random number between 0 and 50
+
+        // Show the results
+        document.getElementById('downloadSpeed').textContent = downloadSpeed;
+        document.getElementById('uploadSpeed').textContent = uploadSpeed;
+        document.getElementById('ping').textContent = ping;
+
+        // Reveal the result section
+        document.getElementById('speedResult').style.display = 'block';
+
+        // Reset button
+        document.querySelector('.test-button').disabled = false;
+        document.querySelector('.test-button').textContent = "Start Speed Test";
+      }, 2000); // Simulate a delay of 2 seconds before showing the results
+    }
+  </script>
+
+</body>
+</html>
